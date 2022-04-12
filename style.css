@@ -1,0 +1,58 @@
+nav{
+    background-color: #091033!important;
+    height:10vh;
+}
+
+#logo{
+    background-color:transparent;
+    position:cover;
+   width: 25vw;
+    height: 7vh;
+    
+    padding-bottom: ;
+
+
+}
+#nav-buttons{
+    color: rgb(0, 166, 232) !important;
+}
+
+.nav-link{
+    color: white;
+    text-align: center;
+  
+    
+    justify-content: center;
+
+}
+.nav-link:hover{
+    background-color:rgb(54, 106, 127);
+    color: black;
+}
+
+#bar-button{
+align-items: center;
+justify-content: center;
+height: 7vh;
+}
+
+#bar{
+    align-items: center;
+    justify-content: center;
+    margin-top: -7vh;
+    
+}
+#my-img{
+    margin-top:20vh;
+    margin-left:40vw;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    
+}
+
+h1{
+    font-size: 65px;
+    text-align: center;
+    color: white;
+}
