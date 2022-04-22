@@ -1,204 +1,557 @@
-nav{
-    background-color: #091033!important;
-    height:10vh;
+html {
+  overflow-x: hidden;
+  ;
 }
 
-#logo{
-    background-color:transparent;
-    position:cover;
-   width: 25vw;
-    height: 7vh;
-    
-    padding-bottom: ;
-
-
-}
-#nav-buttons{
-    color: rgb(0, 166, 232) !important;
-}
-
-.nav-link{
-    color: white;
-    text-align: center;
-  
-    
-    justify-content: center;
-
-}
-.nav-link:hover{
-    background-color:rgb(54, 106, 127);
-    color: black;
+/* nav */
+nav {
+  position: fixed;
+  background-color: #091033;
+  height: 10%;
+  background-image: url(img/gifgit\ \(2\).gif);
+  /*https://editor.freelogodesign.org/*/
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right 1vh;
+  background-position: relative;
 }
 
-#bar-button{
-align-items: center;
-justify-content: center;
-height: 7vh;
+#nav-buttons {
+  color: rgb(0, 166, 232) !important;
+  transition: all 0.5s;
 }
 
-
-
-#bar{
-    align-items: center;
-    justify-content: center;
-    margin-top: -7vh;
-    
+.nav-link {
+  color: rgb(255, 255, 255);
+  margin-left: ;
+  text-align: center;
+  justify-content: center;
 }
 
-#my-img{
-    margin-top:20vh;
-    margin-left:40vw;
-    align-items: center;
-    justify-content: center;
-    width: 20vw;
-    
+.nav-link:hover {
+  background-color: rgb(54, 106, 127);
+  color: black;
+  align-self: center;
+  transition: linear .4s;
 }
 
-h1{
-    font-size: 65px;
-    text-align: center;
-    color: white;
+#bar-button {
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+#bar {
+  align-items: center;
+  justify-content: center;
+  margin-top: -7vh;
+  position: sticky;
+}
+
+/* Home Page */
+#my-img {
+  margin-top: 20vh;
+  margin-left: 40vw;
+  align-items: center;
+  justify-content: center;
+  width: 200vw;
+  margin-bottom: 0px;
+  height: 200vh;
+}
+
+#code-text {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+#code-text-love {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 65px;
+  text-align: center;
+  color: white;
 }
 
 /* new image border with text */
-*{
-    margin:0;
-    padding:0;
-  }
-  
-  .container{  padding-top: 20px;
-    padding-bottom: 20px;}
-  body{
-    background-color: #111845;
-  }
-  
-  .background-img{
-    background-image: url(img//habil\ jadid.JPG);
-  height: 400px;
-    width: 60vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 5% auto;
-    padding:20px;
-    border: 1px solid #070b28;
-    border-radius: 4px;
-    box-shadow: 0px 0px 5px #5560a7;
-    position: relative;
-  }
-  
-  .content h2{ font-size:19px;}
-  
-  .box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    height: 300px;
-    background: #111845a6;
-    box-sizing: border-box;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
-    color: white;
-    padding: 20px;
-  }
-  
-  .box:before{
-    content: '';
-    position:absolute;
-    top:0;
-    left:-100%;
-    width:60vw;
-    height:100%;
-    background: rgba(0, 0, 10, 0.1);
-    transition:0.5s;
-    pointer-events: none;
-  }
-  
-  .box:hover:before{
-    left:-50%;
-    transform: skewX(-5deg);
-  }
-  
-  
-  .box .content{
-    position:absolute;
-    top:15px;
-    left:15px;
-    right:15px;
-    bottom:15px;
-    border:1px solid #000104;
-    padding:20px;
-    text-align:center;
-    box-shadow: 0 5px 10px rgba(9,0,0,0.5);
-    
-  }
-  
-  .box span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60vw;
-    height: 100%;
-    display: block;
-    box-sizing: border-box;
-    
-  }
-  
-  .box span:nth-child(1)
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: #022c4e;
+}
+
+.content h2 {
+  font-size: 19px;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 300px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60vw;
+  height: 100%;
+  background: rgba(0, 0, 10, 0.1);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before {
+  left: -50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #000104;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+  transition: all 2s;
+
+}
+
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
   {
-    transform:rotate(0deg);
-  }
-  
-  /* .box span:nth-child(2) */
+  transform: rotate(90deg);
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+/* .box span:nth-child(4) */
   {
-    transform:rotate(90deg);
-  }
-  
-  .box span:nth-child(3)
-  {
-    transform:rotate(180deg);
-  }
-  
-  /* .box span:nth-child(4) */
-  {
-    transform:rotate(270deg);
-  }
-  
-  .box span:before
-  {
-    content: '';
-    position: absolute;
-    width:60vw;
-    height: 2px;
-    background: #50dfdb;
-    animation: animate 4s linear infinite;
-  }
-  
-  @keyframes animate {
-    0% {
-    transform:scaleX(0);
+  transform: rotate(270deg);
+}
+
+.box span:before {
+  content: '';
+  position: absolute;
+  width: 60vw;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
     transform-origin: left;
-    }
-    50%
-    {
-      transform:scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(1);
     transform-origin: left;
-    }
-    50.1%
-    {
-      transform:scaleX(1);
+  }
+
+  50.1% {
+    transform: scaleX(1);
     transform-origin: right;
-      
-    }
-    
-    100%
-    {
-      transform:scaleX(0);
+
+  }
+
+  100% {
+    transform: scaleX(0);
     transform-origin: right;
-      
-    }
-    
-    
-  } 
+
+  }
+
+
+}
+
+
+/* Humbargar navbar */
+
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: left .5s ease;
+}
+
+#header nav {
+  height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+}
+
+#header .nav-link {
+  margin: .7rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+#header .toggle-button {
+  background: none;
+  color: var(--color-primary);
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
+
+.site-banner .banner-area {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.nav {
+  float: left;
+}
+
+#myinfo-card {
+  position: sticky;
+  background-color: #50dfdb;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+
+  position: sticky;
+  top: 10px;
+}
+
+
+
+/* about me*/
+/* aboutme */
+
+#aboutme {
+
+  display: grid !important;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: stretch;
+  align-items: stretch;
+
+  gap: 1rem;
+
+}
+
+.img-about-me {
+  grid-column: 1/5;
+  grid-row: 1/4;
+  size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.my-own-image {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+}
+
+.aboutme-text {
+  grid-column: 4/8;
+  grid-row: 2/3;
+  size: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Rajdhani', sans-serif;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: justify;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+}
+
+.github-in {
+  grid-column: 5/8;
+  grid-row: 3/4;
+
+  display: flex;
+  align-items: center;
+
+}
+
+#my-photo {
+  border-radius: 15%;
+  border: .2vw solid rgb(5, 172, 194);
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 6vw;
+  max-width: 90%;
+  max-height: 80%;
+
+}
+
+#about-me {
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-justify: center;
+  font-size: 180%;
+  color: #bdd9fb !important;
+}
+
+#Education {
+  background-image: url(img/e\ bg\ 3.png);
+  background-image: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+/* projects */
+.card {
+  background-color: #b5d8f5;
+  box-shadow: 2px 2px 2px 2PX rgb(1, 16, 24);
+  border-radius: 2%;
+
+}
+
+.card:hover {
+
+  transform: scale(1.01);
+}
+
+.card-img-top {
+  margin-top: 2%;
+  border-radius: 5%;
+}
+
+.card-img-top:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.card-deck {
+  display: grid !important;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+    position: flex;
+  }
+}
+
+#card0 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(img/project\ bg.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#card1 {
+  grid-column: 1/3;
+  grid-row: 1/ 2;
+  padding: 1rem;
+}
+
+#card2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+
+  padding: 1rem;
+}
+
+#card3 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  padding: 22px;
+}
+
+#card4 {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* new  jobs */
+p {
+  margin: 0 0 13px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+#job-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background: linear-gradient(rgb(43, 179, 241), rgb(152, 216, 241));
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.job-icon {
+
+
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  /* height: calc(10vw + 20px); */
+  transition: all 0.2s ease-in;
+}
+
+.job-description {
+  border-top: 2px solid rgb(1, 5, 41);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.job-description .title {
+  font-weight: 600;
+  justify-content: center !;
+}
+
+.job-description .story {
+  line-height: 26px;
+  font-size: x-large;
+}
+
+@media (max-width: 600px) {
+  .job-description {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-description .story {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+/* contact */
+.page-section {
+  padding: 7rem 0;
+  background-color: rgb(0, 73, 109);
+
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 2em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+#phone-and-email {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}

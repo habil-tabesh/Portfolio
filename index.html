@@ -1,97 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habil Tabesh</title>
+  <link rel="icon" href="img/icon.png" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
 </head>
-<body style="background-image:url(img/coding\ bg\ 3.jpg); background-size: 100vw 100vh; background-repeat:no-repeat;">
-    
-    <nav class="navbar navbar-inverse navbar-expand-lg">
-        <div class=" container-fluid">
-                <a  class="navbar-brand col-md-" href="#"><img id="logo" src="img/gifgit (2).gif" alt=""></a>
-            <button id="bar-button" class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span><svg id="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul id="nav-buttons" class="nav  navbar-nav col-10">
+
+<body>
 
 
-                        
-                        <li style="background-color: #091033"; class="  col-2"><a href="#" class="nav-link">About</a></li>
-                        <li style="background-color: #091033"; class="col-2  "><a href="#" class="nav-link">Eduction</a></li>
-                        <li style="background-color: #091033"; class="col-2  "><a href="#" class="nav-link">Experience</a></li>
-                        <li style="background-color: #091033"; class="col-2  "><a href="#" class="nav-link">Projects</a></li>
-                        <li style="background-color: #091033"; class="col-2";><a href="#" class="nav-link"><span class="glyphicon glyphicon-envelope"></span> Contact </a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
-            </div>
+  <nav class=" navbar col-xs-8 navbar-inverse navbar-expand-lg sticky-top row">
+    <div class=" container-fluid">
+      <button style="color:rgb(5, 61, 107); height: 5vh; " id="bar-button" class="navbar-toggler bg-primary "
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span style="height:10px" class="navbar-toggler-icon"></span><svg style="max-width:100%; max-height:100%;"
+          id="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+        </svg></button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+        <ul id="nav-buttons" class="nav row  navbar-nav col-8 col-xs-10">
+  
+  
+  
+          <li style="background-color: #091033;" class="col-lg-2  col-s-10"><a href="#about" class="nav-link ">About</a>
+          </li>
+          <li style="background-color: #091033" ; class="col-lg-2 col-s-10 "><a href="#education-part"
+              class="nav-link">Education</a>
+          </li>
+          <li style="background-color: #091033" ; class="col-lg-2 col-s-6 "><a href="#experience"
+              class="nav-link">Experience</a></li>
+          <li style="background-color: #091033" ; class="col-lg-2  col-s-6"><a href="#projects"
+              class="nav-link">Projects</a>
+          </li>
+          <li style="background-color: #091033" ; class="col-lg-2 col-s-6" ;><a href="#contact" class="nav-link"><span
+                class="glyphicon glyphicon-envelope"></span> Contact </a></li>
+  
+        </ul>
+  
+</nav>
+  </div>
+
+
+
+
+
+
+
+<!-- Home-page -->
+  <section
+    style="background-image:url(img/cincinnati\ bg5.jpg); background-size: 100vw 100vh; background-repeat:no-repeat; margin-bottom: 0 !important;"
+    class="site-banner">
+    <div style="margin-bottom: 0" class="container banner-area">
+  
+      <div style="margin-bottom: 0;" class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+          <h1 style="color: #dfdfdf">Habil Tabesh</h1>
+          <h2 style="color: #4e60c5"><strong style="font-size:25px"> Front-end Web Designer</strong> </h2>
+          <h5 id="code-text" style="color: #adadad">
+            &lt;em&gt; <strong style="font-size:25px">I</strong> &lt;strong&gt;<strong id="code-text-love"
+              style="color: #8fa2ca"><i class="fa5-heart"></i> Love</strong> &lt;/strong&gt; <strong
+              style="font-size:25px">Coding</strong> &lt;/em&gt;
+          </h5>
         </div>
-    </nav>
+  
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
-    <section>
-        <div class="container">
-          <!-- <div class="background-img"> -->
-            <div class="box">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div class="content">
-                <h2>Web Developer </h2>
-                <p><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, soluta nobis, fugiat cupiditate incidunt nesciunt praesentium sapiente quam libero quis quos doloremque quidem, exercitationem eos rem tenetur tempora nisi laborum.</a></p>
-              </div>
-              
-            </div>
+
+<br>
+
+<!-- About me -->
+  <div id="about"></div>
+  <div style="background-color:rgb(2, 13, 63)" id="aboutme" class="container-fluid">
+    <div style="background-image: url(img/cincinnati\ bg2.jpg); background-repeat: no-repeat; background-size: cover;"
+      class="img-about-me"><img class="my-own-image" style="width: 80%; height: 100%; border-radius: 5%;"
+        src="img/imoji.jpg" alt=""></div>
+  
+    <div style="background-color:#05102b; color:rgb(142, 228, 243); font-size:2vw; display:flex;  " class="aboutme-text ">
+      <p>
+        I am a web developer student at Kable
+        Academy that loves challenges. I'm 22 years old and my target right now is to learn as much as I can
+        and challenge myself to become a professional developer. </p>
+    </div>
+  
+    <section style="width:100%; height: 100%; background-color: #062050;" class="py-4  text-white github-in" id="resume">
+      <div class="container text-center">
+        <h2 class="mb-4">Check Out My Github and Linked In</h2>
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <li class="list-inline-item ">
+              <a href="https://github.com/habil-tabesh">
+                <svg style="height:4rem" class="svg-inline--fa fa-github fa-w-16 fa-3x mb-3  " aria-hidden="true"
+                  focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="1 0 496 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg>
+  
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/habil-tabesh-59292022b/">
+                <svg style="height:4rem;  " class="svg-inline--fa fa-linkedin-in fa-w-14 fa-3x mb-3 " aria-hidden="true"
+                  focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
+            </li>
           </div>
         </div>
-      </section>
-    <!-- <img id="my-img" src="img/Habil new.jpg" alt=""> -->
-    
+      </div>
+    </section>
+  
+  </div>
 
+  
+  
+  <!-- jobs -->
+  <div id="experience"></div>
+  <div id="job-container" class="container ">
+    <h1 style="color: #05102b;" class="center">Experience</h1>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- <h1>Habil Tabesh</h1> -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>asdfadsfsdfasdfsadfasdfsfa</p>
-
+    <article class="jobs">
+      <div class="job-icon"><img style="width: 60%; height: 80%" src="./img/KA.png" alt=""></div>
+      <div class="job-description">
+        <div  class="title"><h5> Web Developer (Student)</h5></div>
+        <div class="story">
+         <h3>Kable Academy</h3> 
+          <br>
+          <p> I've always been interested in coding and web development. In March 2022 I got the opportunity to join Kable
+        Academy, this portfolio was made with the knowledge and experience I acquired in the academy, and I got a lot of
+        development practice.</p>
+        </div>
+      </div>
+    </article>
     
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <article class="jobs">
+      <div class="job-icon"><img style="border-radius:50%; width: 60%; height: 80%" src="img/star.png" alt=""></div>
+      <div class="job-description">
+        <div class="title"><h5>ESL Instructor</h5></div>
+        <div class="story">
+          <h3>Star Educational Society</h3>
+          <br>
+          <p>I have worked as English Instructor, Teacher Assistant, and news translator at SES. I started teaching at SES
+            in January 2018 and left there in August 2021.</p>
+        </div>
+      </div>
+    </article>
+    
+    <article class="jobs">
+      <div class="job-icon"><img style="border-radius:10%; width: 70%; height: 100%" src="img/kt.jpg.crdownload" alt=""></div>
+      <div class="job-description">
+        <div class="title"><h5>Server</h5></div>
+        <div class="story">
+          <h3>Kenwood Theatre</h3>
+          <br>
+          <p>I have worked at Kenwood Theatre since March 2022. I learnt how to treat with customers in different ages and
+            got great experience of working in a team.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Education -->
+  <div id="education-part"></div>
+  
+  <div id="Education" style="color:white; " class="container-fluid bg-transparent">
+  
+    <h1 style="border-bottom:10px double rgb(146, 221, 253) !important;font-family: 'Rajdhani', sans-serif; font-weight:bold; color:#81c2e0 ">Education</h1>
+    <h2>  Kable Academy</h2>
+
+      <h3>Web Development student</h3>
+         <h4>Web development class
+             Javascript, Node js, React, frontend</h4>
+  
+    <br>
+    <hr>
+
+    <h2>Pamir High School</h2>
+        <h3>High school Diploma</h3>
+           <h4>average of 97.6%</h4>
+    <br>
+    <hr>
+    <h2>Al-Farabi Kazakh National University</h2>
+        <h3>Preparation year</h3>
+           <h4>Kazakh language, History of Kazakhstan, maths</h4>
+    <br >
+    <br>
+    <br >
+  
+  </div>
+
+ 
+
+
+<!-- Programming Languages and skills -->
+ <section style="background:linear-gradient(rgb(253, 253, 255), rgb(24, 99, 160)) " class="page-section" id="skills">
+  <div class="container">
+
+      <h2  style="color:rgb(1, 16, 19)" class="text-center mt-0">Programming Languages &amp; Software Tools</h2>
+
+     <br>
+
+      <div style="border-top:3px solid #6689c9;" class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <img src="./img/html logo 2.png" alt="html" id="skill-icon" width="100px" height="100vh">
+                  <h3 class="h4 mb-2">HTML</h3>
+                  <p class="text-muted mb-0"></p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <img src="./img/css icon2.png" alt="css" id="skill-icon" width="90px" height="100vh">
+                  <h3 class="h4 mb-2">CSS</h3>
+                  <p class="text-muted mb-0"></p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <img src="./img/bootstrapicon.png" alt="bs" id="skill-icon" width="100px" height="100x">                            
+                  <h3 class="h4 mb-2">Bootstrap</h3>
+                  <p class="text-muted mb-0"></p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <img src="./img/js icon.png" alt="js" id="skill-icon" width="140px" height="100px">                           
+                  <h3 class="h4 mb-2">JavaScript</h3>
+                  <p class="text-muted mb-0"></p>
+              </div>
+          </div>
+          
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+              <img src="./img/github icon2.jpg" alt="js" id="skill-icon" width="70px" height="70px">                           
+              <h3 class="h4 mb-2">Github</h3>
+              <p class="text-muted mb-0"></p>
+          </div>
+      </div>
+      
+    <div class="col-lg-3 col-md-6 text-center">
+      <div class="mt-5">
+          <img src="./img/vs icon.jpg" alt="js" id="skill-icon" width="75px" height="75px">                           
+          <h3 class="h4 mb-2">Visual Studio</h3>
+          <p class="text-muted mb-0"></p>
+      </div>
+  </div>
+      </div>
+  </div>
+</section>
+ </div>
+
+ <!--  Projects -->
+  <div id="projects" style="background-color: #05182e; background-size: cover; " class="card-deck margin-top">
+    
+    <!-- card0(project) -->
+    <div id="card0" class="card" style="margin:.%; ">
+      <h1>Projects</h1>
+    </div>
+  
+  <!-- card1(MadLibs) -->
+    <div id="card1" class="card " style="margin:.%; background-color: rgb(8, 56, 88); color: white;">
+      <div class="row ">
+        <div class="col-md-4">
+          <a href="https://habil-tabesh.github.io/Mad-Lib/"><img style="height: 100%" src="img/Mad libs page.png"
+              class="img-fluid card-img-top rounded-start" alt="..."></a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">MadLib</h5>
+            <p class="card-text">Experience having fun with words. Do it with your friends and get surprising results </p>
+            <p class="card-text"><small class="text-muted">Html, Css, JavaScript (click on the image to open)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- card2(Piano) -->
+    <div id="card2" style="background-color: #7dd6ff; " class="card ">
+      <a href="https://habil-tabesh.github.io/Piano/"><img class="card-img-top" src="img/Piano page.png"
+          alt="Card image cap"></a>
+      <div class="card-body">
+        <h5 class="card-title">Piano </h5>
+        <p class="card-text">You love piano, but you don't have it at home? Don't worry now you can play piano on your computer!</p>
+        <p class="card-text"><small class="text-muted">Html, Css, JavaScript(click on the image to open)</small></p>
+      </div>
+    </div>
+  
+    <!-- card3(about me) -->
+    <div id="card3" class="card " style="margin:.%;  background-color: rgb(8, 56, 88);  color: white;">
+      <div class="row ">
+        <div class="col-md-4">
+          <a href="https://habil-tabesh.github.io/aboutMe/"><img style="height: 100%" src="img/about me page.png"
+              class=" rounded-start card-img-top" alt="..."></a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">About Me</h5>
+            <p class="card-text">This is my first project. I made it in the second week of studying at Kable Academy. You can find out more about me, my educational background and job experience</p>
+            <p class="card-text"><small class="text-muted">Html, Css(click on the image to open)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- card4(Movie store) -->
+    <div id="card4" style="margin:0%; background-color: #7dd6ff; " class="card container-fluid ">
+      <a href="https://habil-tabesh.github.io/MovieStore/"><img class="card-img-top" src="img/Movie store page.png"
+          alt="Card image cap"></a>
+      <div class="card-body">
+        <h5 class="card-title">Movie Store</h5>
+        <p class="card-text">Choose your favorite genre, see the description, watch the trailer, and purchase the movie you like</p>
+        <p class="card-text"><small class="text-muted">Html, Css(click on the image to open)</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- contact -->
+  <section  class="page-section" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 style="color:black" class="mt-0">Let's Get In Touch!</h2>
+                <hr class="divider my-4">
+                <p style="color:#030d17" class=" mb-5">Give me a call or send an email and I will get back to you as soon as possible!</p>
+            </div>
+        </div>
+        <div id="phone-and-email" class="row">
+            <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <svg class="svg-inline--fa fa-phone fa-w-16 fa-3x mb-3 text-muted" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
+                <div style="color:black">(513) 693-5434</div>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+                <svg class="svg-inline--fa fa-envelope fa-w-16 fa-3x mb-3 text-muted" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                <a class="d-block" href="mailto: 20101085h@gmail.com"  >habil.tabesh134@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer style="background-color: #05102b; color: white" class=" py-3">
+    <div class="container"><div class="small text-center">Copyright © 2022 - Habil Tabesh</div></div>
+</footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
