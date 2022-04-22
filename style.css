@@ -364,6 +364,7 @@ body {
   background-image: transparent;
   background-size: 100%;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 
